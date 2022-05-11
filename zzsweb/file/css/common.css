@@ -1,0 +1,88 @@
+body{   
+    background-image: url(../../img/coffee2.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    
+}
+#wrapper{
+    margin: 10px auto;
+    width: 1600px;
+    border: 1px solid brown;
+    background-color: coral;
+    
+}
+#bodyer{
+ clear: left;   
+ background-color: aliceblue;
+
+}    
+
+.header_line1{
+    background-image: url(../../img/logo.jpg) !important;
+}
+.header_line2{
+    background-color:#666 ;
+    clear:both;
+    overflow: auto;
+}
+.header_line1_right{
+    float: right;
+    margin: 10px;
+}
+.header_line1_left{
+    float:left;
+    margin: 10px;
+}
+.header_line1_right a{
+    color: black;
+    text-decoration: none;   
+    
+}
+.header_line2_left{
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+    float:right;
+    
+}
+.header_line2_right{
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    float:right;
+}
+.header_line2_middle{
+    
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    float:right;
+}
+.header_line3{
+    overflow: auto;
+}
+.header_line3_right{
+    margin: 10px;
+    float:right;
+}
+.header_line3_left{
+    margin: 10px;
+    float:left;
+}
+.header_line3_left span{
+    font-weight: bold;
+    color:darkcyan;
+    height: 80px;
+    
+}
+.header_line3_right a{
+    font-weight: bold;
+    color:darkcyan;
+    height:80px;
+    text-decoration: none;
+}
+#Rutgers{
+    margin-left: 200px;
+    margin-top: 50px;
+}

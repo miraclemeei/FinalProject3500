@@ -1,0 +1,107 @@
+*{margin: 0;}
+header{ background-color: whitesmoke; height: 60px; }
+header h1{ font-size: 18px; font-family: monospace; 
+    margin-top: 15px; float: left; margin-left: 10px;}
+header img{float: right; height: 60px; width: 60px;
+     margin-top:-0.3% ;}
+#upper #sidebar{
+    background-color:black ; width: 20%; float: left; 
+}
+#upper #sidebar ul{
+    
+    list-style:none;
+}
+#upper #sidebar ul li{
+    color: white; 
+}
+#sidebar li:hover{background-color: red; color: blue; cursor: pointer;}
+#upper #upper_content{
+    width: 80%;
+    height: 86px;
+    background-color: goldenrod;
+    margin-top: -0.02%;
+    float: right;
+}
+
+#span_1 p{
+    margin: 0;
+    text-align: center;
+    margin-left: 30px;
+    color: black;
+    align-content: center;
+
+}
+#span_2 p{
+    margin-left: 30px;
+    color: aliceblue;
+    align-content: center;
+
+}
+#middle_head{
+    text-align: center;
+    clear:both;
+}
+#pg1{
+    vertical-align: middle;
+    text-align: center;
+    height: 100px;
+    color: aliceblue;
+    width: 31%;
+    background-color: black;
+    float:left;
+    margin: 1%;
+}
+#pg2{
+    text-align: center;
+    height: 100px;
+    color: aliceblue;
+    width: 31%;
+    background-color: black;
+    float:left;
+    margin: 1%;
+
+}
+
+#pg3{
+    text-align: center;
+    height: 100px;
+    color: aliceblue;
+    width: 31%;
+    background-color: black;
+    float:left;
+    margin: 1%;
+
+}
+#pg1 p{
+    margin-top: 10%;
+}
+#pg2 p{
+    margin-top: 10%;
+}
+#pg3 p{
+    margin-top: 10%;
+}
+#middle_foot{
+    text-align: center;
+    clear:both;
+}
+#bottom{
+    box-align: center;
+    background-color: black;
+    height:1000px
+}
+
+#bottom p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+    float:left;
+    color:darkgoldenrod;
+    margin-top: 10px;
+}
+#bottom img{
+    width: 50%;
+    float:right;
+    margin-right: 10%;
+}
+

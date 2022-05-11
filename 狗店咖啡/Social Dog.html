@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Social Dog WKU</title>
+ <link rel="stylesheet" type="text/css" href="CSS/style.css">
+ <link rel="stylesheet" type="text/css" href="../学习/E-Commerce/CSS/all.css">
+ <link rel="stylesheet" type="text/css" href="../学习/E-Commerce/CSS/all.min.css" >
+</head>
+<header>
+    <div id="header_line1">
+        <div  class ="header_line1_left">
+            <span>Social Dog</span>
+        </div>
+        <div  class="header_line1_right">
+            <a href="">FAQ</a>
+            <a href="">Contact US</a>
+            <a href="">About</a>  
+        </div>
+    </div>
+    <div class="header_line2_left">
+        <img src="img/logo.png" width="15%" height="6%" style="margin-left: 5px;">  
+    </div>
+    <div class="header_line2_right">
+        
+        <form method="get" enctype="multipart/form-data">
+            <input type="text" placeholder="Search from here...">
+            <button id="search_btn" onclick= "myFunction()">Search</button>
+            <button id="cart_btn"> Cart </button>
+        </form>
+    </div>
+</header>
+<body>
+    <div id="navbar">
+        <ul id="nav">
+            <li><a href="">FEATURES</a>
+                <ul style="margin-top: 5px;">
+                    <li>Coffee</li>
+                    <li>Milk Tea</li>
+                    <li>Food</li>
+                </ul>
+            </li>
+            <li><a href="Order Page.html">TAKE ORDER</a></li>
+            <li><a href="">MENU</a></li>
+            <li><a href="../zzsweb/index.html">BUSSINESS</a></li>
+            <li><a href="">PICTURES</a></li>
+        </ul>
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+        
+            <img src="../zzsweb/img/coffee.jpg" style="width:1450px; height: 600px;">
+        </div>
+
+        <div class="mySlides fade">
+    
+            <img src="../zzsweb/img/coffee2.jpg" style="width:1450px; height: 600px;">
+        </div>
+
+        <div class="mySlides fade">
+    
+        <img src="../zzsweb/img/coffee3.jpg" style="width:1450px; height: 600px;">
+        </div>
+        <br>
+        <div style="text-align:center" hidden>
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            </div>
+
+    </div>
+    <div id="Main">
+        <span style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center;"> Recommended for the Daily Drinks: </span>
+        <table>
+            <tr id="first">
+                <th style="background-color: aqua;">
+                    Monday
+                </th>
+                <th style="background-color: red;">
+                    Tuesday
+                </th>
+                <th style="background-color: yellow;">
+                    Wednesday
+                </th>
+                <th style="background-color: gray">
+                    Thursday
+                </th>
+                <th style="background-color: darksalmon">
+                    Friday
+                </th>
+                
+            </tr>
+            <tr id="second">
+                <th style="background-color: aqua;">
+                    Black Tea
+                </th>
+                <th style="background-color: red;">
+                    Earl Grey Tea
+                </th>
+                <th style="background-color: yellow;">
+                    Espresso
+                </th>
+                <th style="background-color: gray">
+                    Latte
+                </th>
+                <th style="background-color: darksalmon">
+                    Vanilla Latte
+                </th>
+            </tr>
+            <tr id="third">
+                <th style="background-color: aqua;">
+                    Duriam Cream
+                </th>
+                <th style="background-color: red;">
+                    Choc Mousse
+                </th>
+                <th style="background-color: yellow;">
+                    Blueberry Cream
+                </th>
+                <th style="background-color: gray">
+                    Mango Mousse
+                </th>
+                <th style="background-color: darksalmon">
+                    Pitaya Cream 
+                </th>
+            </tr>
+        </table>
+
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); 
+        }
+        
+        function myFunction(){
+        alert("Try Search");
+        }
+
+        
+    </script>
+
+    <br>
+</body>

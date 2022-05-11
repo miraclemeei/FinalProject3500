@@ -1,0 +1,118 @@
+
+<!--WB3-->
+search
+order
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>SocialDogWKUOderingPage</title>
+ <link rel="stylesheet" type="text/css" href="CSS/style.css">
+ <link rel="stylesheet" type="text/css" href="../学习/E-Commerce/CSS/all.css">
+ <link rel="stylesheet" type="text/css" href="../学习/E-Commerce/CSS/all.min.css" >
+</head>
+<header>
+    <div id="header_line1">
+        <div  class ="header_line1_left">
+            <span>Social Dog</span>
+        </div>
+        <div  class="header_line1_right">
+            <a href="">FAQ</a>
+            <a href="">Contact US</a>
+            <a href="">About</a>  
+        </div>
+    </div>
+    <div class="header_line2_left">
+        <img src="img/logo.png" width="15%" height="6%" style="margin-left: 5px;">  
+    </div>
+    <div class="header_line2_right">
+        
+        <form method="get" enctype="multipart/form-data">
+            <input type="text" placeholder="Search from here...">
+            <button id="search_btn" onclick= "myFunction()">Search</button>
+            <button id="cart_btn"> Cart </button>
+        </form>
+    </div>
+</header>
+<body>
+    <div id="navbar">
+        <ul id="nav">
+            <li><a href="">FEATURES</a>
+                <ul style="margin-top: 5px;">
+                    <li>Coffee</li>
+                    <li>Milk Tea</li>
+                    <li>Food</li>
+                </ul>
+            </li>
+            <li><a href="">TAKE ORDER</a></li>
+            <li><a href="">MENU</a></li>
+            <li><a href="../zzsweb/index.html">BUSSINESS</a></li>
+            <li><a href="">PICTURES</a></li>
+        </ul>
+    </div>
+        <img src="../狗店咖啡/img/菜单.jpg" width="100%" height="1200px">
+    <div id = "Register" style="background-image: url(../狗店咖啡/img/food.webp); margin-top: 0;">
+        <center>ORDER</center> 
+        <center>Please use the form below to order yor Coffee at Social Dog!</center>
+        <div id="Register_form">
+            <form action="addstudent.php" method="POST" class="basic-grey">
+                <fieldset >
+                    <legend style="text-decoration: solid;"> Order</legend>
+                    <label for="">
+                        User: <input type="text" name="user" placeholder="UserId" required>
+                    </label>
+                    <label for="">
+                        Password: <input type="password" name="password" placeholder="Password" required>
+                    </label>
+                    <label for="">
+                        Orders: <input type="text" name="orders" list="menuform" placeholder="Order your drink" required>
+                    </label>
+                    <label for="">
+                        StudentId: <input type="text"  placeholder="studentid" required>
+                    </label>
+                    <label for="">
+                        <label for="vehicle1"> Notes </label> 
+                        <textarea name="note" placeholder="Your Notes to us"></textarea>
+                    </label>
+                    <label for="">
+                        Sugar Level:<br><br> Full Sugar<input type="radio"  value="FullSugar" >Half Sugar<input type="radio"  value="HalfSugar" >No Sugar<input type="radio"  value="NoSugar" >
+                    </label>
+                    <label for="">
+                        Toppings: <br><br>
+                        Pearl <input type="checkbox" id=""  value="1">
+                        Matcha<input type="checkbox" id=""  value="1">
+                        Taro<input type="checkbox" id=""  value="1">
+                        Snow Cap<input type="checkbox" id=""  value="1">
+                        
+                    </label>
+                    <label for="">
+                        Check: <input type="image" src="img/check.webp"style="height: 30px; width: 10%; align-self: checked">
+                    </label>
+                    <label for="">
+                        Files : <input type="file" >
+                    </label>
+                    
+                    <input type="submit" name="submit" id="submit"/>
+                    <input type="reset">
+                    <datalist id="menuform">
+                        <option>Black Coffee</option>
+                        <option>Decaf</option>
+                        <option>Espresso</option>
+                        <option>Latte</option>
+                        <option>Cappuccino</option>
+                        <option>Macchiato</option>
+                        <option>Flat White</option>
+                        <option >Mocha Latte</option>
+                    </datalist>
+                </fieldset>
+            </form>
+            <a href="ManagementPage.php">Check The Mysql DataBase</i>
+        </div>
+    </div>
+
+   
+</body>
+</html>
+    

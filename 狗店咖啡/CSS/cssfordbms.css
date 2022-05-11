@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+header{
+    background-image: url(../img/double-bubble-dark.webp);
+    overflow: auto;
+}
+.header_line1_left span{
+    margin-left: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: left;
+    font-size: large;
+    margin-top: 20px;
+}
+
+.header_line1_right{
+    float: right;
+    margin-top: 20px;
+}
+.header_line1_right a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+.header_line2_left{
+    float: left;
+    clear: both;
+}
+.header_line2_right{
+    float: right;
+
+}
+.header_line2_right form{
+    margin-top: 50px;
+}
+#navbar{
+    width: 100%;
+    height: 40px;
+    background-color:darkblue;
+    float: left;
+    padding: 0;
+
+}
+#navbar ul{
+  clear: both;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 0px;
+}
+#navbar ul li{
+  float: left;
+  padding: 10px;
+  width: 31.5%;
+  text-align: center;
+  color:wheat;
+}
+#navbar ul li a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color:brown;
+
+}
+#navbar ul li:hover{
+    display: block;
+    background-color: palevioletred;
+    color: black;
+    border-top:3px  solid red;
+    cursor: pointer;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+#navbar li ul{
+  display: none;
+}
+#navbar li:hover ul{
+      
+      display: block !important;
+      width: 31.5%;
+      position: absolute;
+      margin-left: -0.5%;
+      margin-top: 10px;
+      z-index: 999;
+}
+#navbar li ul li{
+  width: 97%;
+  background-color: black;
+  text-align: center;
+  float: none;
+
+}
+#main{
+    height: auto;
+    background-image: url(../img/beanstalk-dark.webp);
+}
+#p1{
+    padding-top: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: aliceblue;
+    font-size: larger;
+    text-shadow: 2in;
+    text-decoration: underline white;
+}
+#p2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px white;
+    text-align: center;
+    color: aliceblue;
+    font-size: small;
+    text-decoration: solid white;
+    text-shadow: 2in;
+}
+.table3_10 table {
+    text-align: center;
+	width:100%;
+}
+.table3_10 tr th {
+    padding: 1cm;
+    font-size: 30px;
+	background-color: black;
+	color:#FFFFFF
+}
+.table3_10,.table3_10 th,.table3_10 td
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size:0.95em;
+	text-align:center;
+    color:aliceblue;
+	padding:4px;
+	border:1px solid white;
+	border-collapse:collapse
+}
+.table3_10 tr:nth-child(odd){
+	background-color: black;
+}
+.table3_10 tr:nth-child(even){
+	background-color: blueviolet;
+}

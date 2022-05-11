@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <div>
+    <h1>
+        Sellleeee
+    </h1>
+    <h2 id ="a">
+        Sellleeee
+    </h2>
+    <button onclick="document.getElementById('a').style.display = 'none'"> Hello</button>
+   
+    <button onclick="document.getElementById('myImage').src='img/1.png'"> Turn on the light</button>
+
+    <img id="myImage" src="img/2.png" style="width:100px">
+
+    <button onclick="document.getElementById('myImage').src='img/2.png'"> Turn off the light</button></body>
+    <script src="js/main.js"></script>  
+    </div>
+    <div>
+        <h1 id="new"> Here </h1>
+        <button onclick="get()">result</button>
+        <script>
+            var x = 5;
+            var y = 6;
+            var z =x+y;
+            function get(){
+                document.getElementById("new").innerHTML="answer is "+ z;
+            }
+        </script>
+    </div>
+
+
+</body>
+</html>
