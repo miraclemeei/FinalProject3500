@@ -1,7 +1,8 @@
 <?php
     $servername = "localhost";
     $username = "root";
-    $password = "lntom1971";
+    $password = "";
+    //"lntom1971";
     $dbname = "socialdog";
     
     // Create connection
