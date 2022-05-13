@@ -13,7 +13,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])){
         $sql = "INSERT INTO `order` (`user`,`password`,`orders`,`note`) VALUES ('$user','$password','$orders','$note');";
         $query= mysqli_query($conn,$sql);
         if($query){
-            echo 'Entery Success';
+            echo 'Entry Success';
         }else{
             echo 'Error Occurred';
         }
