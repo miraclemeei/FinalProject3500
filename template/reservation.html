@@ -42,13 +42,6 @@
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Service</a>
                     <a href="menu.html" class="nav-item nav-link">Menu</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu text-capitalize">
-                            <a href="reservation.html" class="dropdown-item active">Reservation</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        </div>
-                    </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
             </div>
@@ -93,14 +86,14 @@
                     <div class="col-lg-6">
                         <div class="text-center p-5" style="background: rgba(51, 33, 29, .8);">
                             <h1 class="text-white mb-4 mt-5">Reserve Your Drink</h1>
-                            <form class="mb-5">
+                            <form class="mb-5" action="../狗店咖啡/addstudent.php" method="post">
                                 <div class="form-group">
-                                    <input type="text" id="user" class="form-control bg-transparent border-primary p-4" placeholder="User Name"
+                                    <input type="text" id="user" name="user" class="form-control bg-transparent border-primary p-4" placeholder="User Name"
                                         required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" id="password" class="form-control bg-transparent border-primary p-4" placeholder="Password"
-                                        required="required" />
+                                    <input type="password" id="password" name="password" class="form-control bg-transparent border-primary p-4" placeholder="Password"
+                                        required="required" value="0000"/>
                                 </div>
                                 <div class="form-group">
                                     <div class="date" id="date" data-target-input="nearest">
@@ -113,24 +106,30 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <select class="custom-select bg-transparent border-primary px-4" style="height: 49px;">
-                                        <option selected>Order your coffee from following:</option>
-                                        <option value="1">Latte</option>
-                                        <option value="2">Americans</option>
-                                        <option value="3">Cappuccino</option>
-                                        <option value="3">Italian Coffee</option>
-                                    </select>
+                                    <input list="browsers" id="orders" name="orders" class="form-control bg-transparent border-primary p-4" 
+                                        required="required" placeholder="Coffee Type">
+                                     <datalist id="browsers">
+                                        <option value="Latte">Latte</option>
+                                        <option value="Americans">Americans</option>
+                                        <option value="Cappuccino">Cappuccino</option>
+                                        <option value="Italian Coffee">Italian Coffee</option>
+                                    </datalist>
+                                    <!-- <select id="orders" class="custom-select bg-transparent border-primary px-4" style="height: 49px;">
+                                        <option selected value="Latte">Latte</option>
+                                        <option value="Americans">Americans</option>
+                                        <option value="Cappuccino">Cappuccino</option>
+                                        <option value="Italian Coffee">Italian Coffee</option>
+                                    </select> -->
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="text" id="note" class="form-control bg-transparent border-primary p-4" placeholder="Note"
+                                    <input type="text" id="note" name="note" class="form-control bg-transparent border-primary p-4" placeholder="Note"
                                     value="" />
                                 </div>
                                 
                                 <div>
-                                    <button class="btn btn-primary btn-block font-weight-bold py-3" type="submit">Reserve Now</button>
-                                </div>
-                            </form>
+                                    <input class="btn btn-primary btn-block font-weight-bold py-3" type="submit" name="submit" id="submit" value="Reserve Now"/>
+                            </form> 
                         </div>
                     </div>
                 </div>
