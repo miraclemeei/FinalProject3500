@@ -6,14 +6,17 @@ echo "Here is the delete page<br>";
 
 include("../connect.php");
 
-
-$sql="DELETE FROM order where note=''";
+if($conn)
+{
+	echo "<br>connection has no problem<br>";
+}
+$sql="DELETE FROM order where note='empty';";
 
 $query=mysqli_query($conn,$sql);
 
 if($query)
 {
-	echo "query successfully";
+	echo "<br>query successfully";
 
 	header("Location:../ManagementPage.php");
 
@@ -21,7 +24,7 @@ if($query)
 }
 else
 {
-	echo "query failed";
+	echo "<br>query failed";
 }
 
 

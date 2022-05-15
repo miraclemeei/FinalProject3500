@@ -13,9 +13,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])){
         $sql = "INSERT INTO `order` (`user`,`password`,`orders`,`note`) VALUES ('$user','$password','$orders','$note');";
         $query= mysqli_query($conn,$sql);
         if($query){
-            echo 'Entry Success';
+            echo "<script>window.alert('Reservation Success');</script>";
+            echo "<script>window.location.href='../template/reservation.html';</script>";
         }else{
-            echo 'Error Occurred';
+            echo "<script>window.alert('Query Error !!!!');</script>";
+            echo "<script>window.location.href='../template/reservation.html';</script>";
         }
 
     }else{
