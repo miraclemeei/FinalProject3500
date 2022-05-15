@@ -40,8 +40,8 @@
                     <li>Select</li>
                 </ul>
             </li>
-            <li><a href="Social Dog.html" style="color:yellow;">Return to the Home</a></li>
-            <li><a href="" style="color:yellow;">Quit</a></li>
+            <li><a href="../template/index.html" style="color:yellow;">Home</a></li>
+            <li><a href="Social Dog.html" style="color:yellow;">Visit Old Site</a></li>
         </ul>
     </div>
     <div id="main">
