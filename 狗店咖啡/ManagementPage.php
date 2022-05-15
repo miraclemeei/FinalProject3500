@@ -17,7 +17,7 @@
 <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>SocialDogWKUOderingPage</title>
+ <title>Management Page of Social Dog</title>
  <link rel="stylesheet" type="text/css" href="CSS/cssfordbms.css">
  <link rel="stylesheet" type="text/css" href="../学习/E-Commerce/CSS/all.css">
  <link rel="stylesheet" type="text/css" href="../学习/E-Commerce/CSS/all.min.css" >
@@ -33,15 +33,15 @@
 <body>
     <div id="navbar">
         <ul id="nav">
-            <li><a href="">DataBase Manipulation</a>
+            <li><a href="" style="color:yellow;">DataBase Manipulation</a>
                 <ul style="margin-top: 5px;">
                     <li>ADD</li>
                     <li>Delete</li>
                     <li>Select</li>
                 </ul>
             </li>
-            <li><a href="Social Dog.html">Return to the Home</a></li>
-            <li><a href="">Quit</a></li>
+            <li><a href="Social Dog.html" style="color:yellow;">Return to the Home</a></li>
+            <li><a href="" style="color:yellow;">Quit</a></li>
         </ul>
     </div>
     <div id="main">

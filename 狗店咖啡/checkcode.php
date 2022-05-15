@@ -31,7 +31,7 @@
 				         "</tr>";
 
 				}
-				echo '</table>';
+				echo '</table> <br>';
 
 
 				//返回code表中，用户输入的code出现的次数，如果>0,则该用户就是管理员
@@ -60,13 +60,13 @@
 
 				if($CodeNum>=1)
 				{
-					$url="../狗店咖啡/ManagementPage.php";
+					$url="ManagementPage.php";
 					
 
 					echo "<script>window.alert('Welcome, Mr.Database Manager');</script>";
 
 					//JS实现页面跳转
-					echo "<script>window.location.href='../狗店咖啡/ManagementPage.php';</script>";
+					echo "<script>window.location.href='ManagementPage.php';</script>";
 
 					//header函数实现页面跳转
 					// header("Location:../狗店咖啡/ManagementPage.php");
