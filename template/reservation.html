@@ -169,18 +169,19 @@
                 </div>
             </div>
 
-            <!-- 数据库管理系统入口 -->
+            <!-- 数据库管理系统入口-------checkcode.php -->
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Database Management</h4>
                 <p>you can manage reservations from database</p>
                 <div class="w-100">
                     <div class="input-group">
-                        <form action="checkcode.php" style="width: 100%;">
+                        <form action="../狗店咖啡/checkcode.php" method="POST" style="width: 100%;">
                              <div class="div-code" style="width: 60%; float: left;">
                                 <input type="text" id="code" class="form-control border-light" style="padding: 14px;" placeholder="Entrace Code">
                             </div>
                             <div class="input-group-append" style="width: 40%; float: left;">
-                                <input type="button" id="button" class="btn btn-primary font-weight-bold px-3" value="Log in">
+                                <input type="submit" id="submit" name="submit" class="btn btn-primary font-weight-bold px-3" value="Log in">
+                                <!-- 只有name字段为submit，才会被form.action检测到 -->
                             </div>
                         </form>
                     </div>
