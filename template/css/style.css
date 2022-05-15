@@ -3346,6 +3346,16 @@ input[type="button"].btn-block {
   width: 100%;
 }
 
+/*.input-group #code{
+  width: 60%;
+  float: left;
+}
+
+.input-group #submit{
+  with: 38%;
+  float: left;
+}*/
+
 .input-group > .form-control,
 .input-group > .form-control-plaintext,
 .input-group > .custom-select,
