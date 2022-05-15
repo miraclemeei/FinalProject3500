@@ -49,7 +49,7 @@
 				$query=mysqli_query($conn,$sql2);
 
 
-				//获取$code出现的次数
+				//获取$code出现的次数，并给他起一个字段名-CodeNum
 				$sql3="select isCodeExist({$code}) as CodeNum;";
 
 				$query=mysqli_query($conn,$sql3);
@@ -58,7 +58,27 @@
 				$CodeNum=$row['CodeNum'];
 				echo "Code-{$code} 出现的次数为 {$CodeNum} 次";				
 
+				if($CodeNum>=1)
+				{
+					$url="../狗店咖啡/ManagementPage.php";
+					
 
+					echo "<script>window.alert('Welcome, Mr.Database Manager');</script>";
+
+					//JS实现页面跳转
+					echo "<script>window.location.href='../狗店咖啡/ManagementPage.php';</script>";
+
+					//header函数实现页面跳转
+					// header("Location:../狗店咖啡/ManagementPage.php");
+				}
+				else
+				{
+					echo "<script>window.alert('You are not database manager, please reconfirm!!');</script>";
+
+					echo "<script>window.location.href='../template/reservation.html';</script>";
+
+
+				}
 
 			}
 			else
