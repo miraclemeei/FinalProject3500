@@ -123,23 +123,15 @@
                 <p>Check your menu and set ups </p>
                 <div class="w-100">
                     <div class="input-group">
-                        <form name="myForm" action=""  method="post">
-                            <input type="text" name="fname" class="form-control border-light" style="padding: 25px;" placeholder="User Name">
+                        <form action="../狗店咖啡/checkcode.php" method="POST" style="width: 100%;">
+                             <div class="div-code" style="width: 60%; float: left;">
+                                <input type="text" id="code" name="code" class="form-control border-light" style="padding: 14px;" placeholder="Entrace Code">
+                            </div>
+                            <div class="input-group-append" style="width: 40%; float: left;">
+                                <input type="submit" id="submit" name="submit" class="btn btn-primary font-weight-bold px-3" value="Log in">
+                                <!-- 只有name字段为submit，才会被form.action检测到 -->
+                            </div>
                         </form>
-                        <div class="input-group-append">
-                            <button class="btn btn-primary font-weight-bold px-3" onclick="jump()">Sign In</button>
-                        </div>
-                        <script>
-                            function jump(){
-                                let x = document.forms["myForm"]["fname"].value;
-                                if (x == "") {
-                                    alert("Name must be filled out");
-                                    return false;
-                                }else if(x=="admin"){
-                                window.location.href="reservation.html"
-                            }
-                        }
-                        </script>
                     </div>
                 </div>
             </div>
