@@ -22,6 +22,16 @@
  <link rel="stylesheet" type="text/css" href="../学习/E-Commerce/CSS/all.css">
  <link rel="stylesheet" type="text/css" href="../学习/E-Commerce/CSS/all.min.css" >
 </head>
+
+
+<script>
+
+    function jump()
+    {
+        window.location.href="SQL/delete.php";
+    }
+</script>
+
 <header>
     <div id="header_line1">
         <div  class ="header_line1_left">
@@ -35,9 +45,9 @@
         <ul id="nav">
             <li><a href="" style="color:yellow;">DataBase Manipulation</a>
                 <ul style="margin-top: 5px;">
-                    <li>ADD</li>
-                    <li>Delete</li>
-                    <li>Select</li>
+                    <a href="SQL/add.php"><li>ADD</li></a>
+                    <li><button style="background-color: black;color:white; font-size:15px; border-width: 0px;" id="navbar-button" onclick="javascript:jump()">Delete</button></li>
+                    <a href="SQL/select.php"><li>Select</li></a>
                 </ul>
             </li>
             <li><a href="../template/index.html" style="color:yellow;">Home</a></li>

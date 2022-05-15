@@ -44,6 +44,9 @@ header{
     padding: 0;
 
 }
+
+
+
 #navbar ul{
   clear: both;
   list-style-type: none;
@@ -92,6 +95,8 @@ header{
   float: none;
 
 }
+
+
 #main{
     height: auto;
     background-image: url(../img/beanstalk-dark.webp);
