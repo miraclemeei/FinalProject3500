@@ -52,7 +52,7 @@
 
                 	include("../connect.php");
 
-                    $sql = "SELECT * FROM `order` WHERE `user` = '{$str1[1]}';";
+                    $sql = "SELECT * FROM `order` WHERE `user` = '{$str1[1]}';";//变量外面一定要加引号！！！
                     $query = mysqli_query($conn,$sql);
                         if($query)
                         {
