@@ -3,12 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Add Customer</title>
+	<title>Select Reservations</title>
 
 	<link rel="stylesheet" type="text/css" href="../CSS/select.css">
 </head>
 <body>
-	<h2> Register Order Information</h2>
+	<h2> Select Order Information</h2>
 
 	<form name="form1" action="../addstudent_manager.php" method="POST">
 		<div class="container">
