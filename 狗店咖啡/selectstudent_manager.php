@@ -3,25 +3,26 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])){
     echo 'good';
     $conn = mysqli_connect('localhost','root','','socialdog') or die("Connect Failed: " . mysqli_connect_error());
 
-    if(isset($_POST['user'])&&isset($_POST['password'])&&isset($_POST['orders'])&&isset($_POST['note']))
+    if(isset($_POST['user']))
     {
         $user = $_POST['user'];
-        $password = $_POST['password'];
-        $note = $_POST['note'];
-        $orders = $_POST['orders'];
+        
 
-        $sql = "INSERT INTO `order` (`user`,`password`,`orders`,`note`) VALUES ('$user','$password','$orders','$note');";
+        $sql = "SELECT * FROM `order` WHERE `user` = {$user};";
         $query= mysqli_query($conn,$sql);
         if($query){
-            echo "<script>window.alert('Add Student Success');</script>";
-            echo "<script>window.location.href='ManagementPage.php';</script>";
+            //print table
+            echo "<script>window.alert('Select Succeed !');</script>";
+
+
         }else{
-            echo "<script>window.alert('Query Error !!!!');</script>";
-            echo "<script>window.location.href='ManagementPage.php';</script>";
+            echo "<script>window.alert('No such person !!!!');</script>";
+
+            echo "<script>window.location.href='SQL/select.php';</script>";
         }
 
     }else{
-        echo 'Bad';
+        echo "<script>window.alert('Missing input value, please check!');</script>";
     }
 }
 else
